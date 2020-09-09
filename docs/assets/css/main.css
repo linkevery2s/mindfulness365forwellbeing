@@ -3960,7 +3960,7 @@ input, select, textarea {
 		margin: 0 auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 1;
 	}
 
 		#footer input, #footer select, #footer textarea {

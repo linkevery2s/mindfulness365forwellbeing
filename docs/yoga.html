@@ -6,7 +6,7 @@
 -->
 <html lang="ja">
 	<head>
-		<title>はじめに</title>
+		<title>ヨガ動画</title>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,11 +42,16 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">September 3, 2020</span>
-									<h1>はじめに</h1>
+									<span class="date">September 9, 2020</span>
+									<h1>ヨガ動画</h1>
 								</header>
-								<div class="image main"><img src="images/rule.jpg" alt="" /></div>
-								<p>自己紹介など</p>
+								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+								<p>説明書き</p>
+								
+								<span class="video-link demo-link" data-video-id="H7eA-u7yLsk"><img src="images/pic01.jpg" width="100%" alt="ヨガ解説動画"></span>
+							
+							
+							
 							</section>
 
 					</div>
@@ -87,6 +92,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/videoLightning.js"></script>
+			<script>
+    			$(function() {
+        			$(".video-link").jqueryVideoLightning({
+            			autoplay: 1,
+            			color: "white"
+        			});
+    			});
+			</script>
 	</body>
 </html>
