@@ -618,7 +618,7 @@ hr {
   float: left;
   padding: 7px;
   width: 33%;
-  opacity: 0;
+  opacity: 1;
 }
 
 .grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
@@ -633,7 +633,7 @@ hr {
 }
 
 .grid img {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .grid img:hover {
