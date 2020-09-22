@@ -618,7 +618,7 @@ hr {
   float: left;
   padding: 7px;
   width: 33%;
-  opacity: 0.5;
+  opacity: 0;
 }
 
 .grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
@@ -641,33 +641,28 @@ hr {
 }
 
 .grid.effect-2 li.animate {
-  -webkit-transform: translateY(200px);
-  -moz-transform: translateY(200px);
-  transform: translateY(200px);
-  -webkit-animation: moveUp .65s ease forwards;
-  -moz-animation: moveUp .65s ease forwards;
-  animation: moveUp .65s ease forwards;
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    transform: translateY(200px);
+    -webkit-animation: moveUp .65s ease forwards;
+    -moz-animation: moveUp .65s ease forwards;
+    animation: moveUp .65s ease forwards;
 }
-
 @-webkit-keyframes moveUp {
-  to {
+    to {
     -webkit-transform: translateY(0);
     opacity: 1;
-  }
 }
-
-@-moz-keyframes moveUp {
-  to {
+}@-moz-keyframes moveUp {
+    to {
     -moz-transform: translateY(0);
     opacity: 1;
-  }
 }
-
-@keyframes moveUp {
-  to {
+}@keyframes moveUp {
+    to {
     transform: translateY(0);
     opacity: 1;
-  }
+}
 }
 
 /* Contact Form */
