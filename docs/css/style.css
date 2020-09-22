@@ -632,11 +632,11 @@ hr {
   max-width: 100%
 }
 
-.grid img {
+.grid li img {
   opacity: 0.7;
 }
 
-.grid img:hover {
+.grid li img:hover {
   opacity: 1;
 }
 
