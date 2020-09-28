@@ -6,7 +6,7 @@
 -->
 <html lang="ja">
 	<head>
-		<title>このアプリについて</title>
+		<title>ヨガ動画</title>
 		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,38 +51,18 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<span class="image main"><img src="images/about.jpg" class="touka" alt="" /></span>
-							<h2>自己紹介</h2>
-							<p>こんにちは、初めまして</p>
+							<h1>Generic Page</h1>
+							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 							
-							<p>私は、書道家セラピストのCHIHIROと申します。</p>
-							<p>保有資格：理学療法士、回復期のリハビリテーション病院3年半、整形外科1年経験</p>
-							<p>書は5才より書道歴15年、ブランクあり、書道協会の準師範取得</p>
-							
-							<p>「皆さんは、毎日健康に過ごされていますか？」</p>
-							
-							<p>この問にYESとお応えできる方は、どのくらいみえるのでしょうか？</p>
-							
-							<p>睡眠不足が解消できない、胃腸が重たい、肩こりがひどい、毎日気分が憂鬱…</p>
-							
-							<p>この国で「健康」に悩みを持たれている方々は多いのではないでしょうか？</p>
-							
-							<p>私自身も過去に双極性障害を患った経験があり、自分の身体と向き合い、障がいを乗り越え、社会復帰しました。</p>
-							
-							<p>今も以下のような体質改善に取り組んでいます。</p>
-							
-								<ul>
-									<li>睡眠・食事・運動</li>
-									<li>生活記録</li>
-									<li>自己管理について</li>
-									<li>思考の仕方、行動力アップ、感情コントロール</li>
-								</ul>
-								
-							<p>自分の経験を活かし、世の中に還元することはできないだろうか？</p>
-							
-							<p>このアプリでは、健康にフォーカスをあてて、少しでも皆様の健康のサポートが出来ればと思い、開発しました。</p>
-							
-							<h2>このアプリについて</h2>
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-4"><span class="video-link demo-link" data-video-id="N0qcG8xv1A0"><img src="images/pic01.jpg" width="100%" alt=""></span></div>
+											<div class="col-4"><span class="video-link demo-link" data-video-id="wy87WAwdx2c"><img src="images/pic02.jpg" width="100%" alt=""></span></div>
+											<div class="col-4"><span class="video-link demo-link" data-video-id="U4Oc9uY61rc"><img src="images/pic03.jpg" width="100%" alt=""></span></div>
+											<div class="col-4"><span class="video-link demo-link" data-video-id="ii4DHyfIsxc"><img src="images/pic04.jpg" width="100%" alt=""></span></div>
+											<div class="col-4"><span class="video-link demo-link" data-video-id="wPUCeVoPnaA"><img src="images/pic05.jpg" width="100%" alt=""></span></div>
+										</div>
+									</div>
 							
 						</div>
 					</div>
@@ -121,6 +101,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/videoLightning.js"></script>
+			<script>
+    			$(function() {
+        			$(".video-link").jqueryVideoLightning({
+            			autoplay: 1,
+            			color: "white"
+        			});
+    			});
+			</script>
 
 	</body>
 </html>
