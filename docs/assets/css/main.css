@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: linear-gradient(90deg,#fff 0%,#fff 75%,rgba(255, 255, 255, 0.5) 25%,rgba(255, 255, 255, 0.5) 100%), url(../../images/back.png);
+		background: linear-gradient(90deg,#fff 0%,#fff 75%,rgba(255, 255, 255, 0.8) 25%,rgba(255, 255, 255, 0.8) 100%), url(../../images/back.png);
 	}
 	
 
