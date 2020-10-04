@@ -1892,7 +1892,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px #c9c9c9;
+				border-bottom: solid 1px #c9c9c9;
 				padding: 0.5em 0;
 			}
 
