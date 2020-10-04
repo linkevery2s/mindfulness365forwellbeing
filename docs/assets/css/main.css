@@ -99,8 +99,11 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: linear-gradient(90deg,#fff 0%,#fff 75%,rgba(255, 255, 255, 0.5) 25%,rgba(255, 255, 255, 0.5) 100%), url(../../images/back.png);
 	}
+	
+
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
