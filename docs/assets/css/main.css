@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: linear-gradient(90deg,#fff 0%,#fff 75%,rgba(255, 255, 255, 0.8) 25%,rgba(255, 255, 255, 0.8) 100%), url(../../images/back.png);
+		background: linear-gradient(90deg,#fff 0%,#fff 75%,rgba(255, 255, 255, 0.9) 25%,rgba(255, 255, 255, 0.9) 100%), url(../../images/back.png);
 	}
 	
 
@@ -1895,7 +1895,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-bottom: solid 1px #c9c9c9;
+				border-bottom: dotted 2px #c9c9c9;
 				padding: 0.5em 0;
 			}
 
@@ -2294,7 +2294,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 4px;
-		border: solid 1px #c9c9c9;
+		border: solid 2px #c9c9c9;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -2867,6 +2867,8 @@ input, select, textarea {
 			right: 2em;
 			top: 2em;
 			z-index: 10000;
+			border: 1px solid #000000;
+			border-radius: 5px;
 		}
 
 			#header nav ul {
