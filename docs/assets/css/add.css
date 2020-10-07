@@ -33,7 +33,7 @@
 .cooking:before{font-family: "Font Awesome 5 Free";content: "\f2e7"; margin-right: 10px; color:#0000FF;}
 
 /* 食材 */
-.food{border-bottom: 2px dotted #808080;}
+.food{border-bottom: 2px solid #808080;}
 .food:before{font-family: "Font Awesome 5 Free";content: "\f06c"; margin-right: 10px; color:#006400;}
 #food{border: 2px dotted #006400 !important;border-color: #006400;}
 
