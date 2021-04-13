@@ -44,3 +44,8 @@
 .box_gov a {border: none !important;}
 .box_gov .box-title:before {font-family: "Font Awesome 5 Free";content: "\f518"; margin-right: 10px;}
 
+/* リンク下線削除 */
+#link_kai a{
+	border: none !important;
+	text-decoration: none !important;
+}
