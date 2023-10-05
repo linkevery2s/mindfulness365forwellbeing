@@ -33,18 +33,18 @@
 
 			let hash = location.hash;
 
-			hash.split("#");
+			let number = hash.split("#");
 
-			console.log(hash[1]);
+			console.log(number[1]);
 
-			document.querySelector("#month").innerHTML = hash[1]; 
+			document.querySelector("#month").innerHTML = number[1]; 
 
-			document.querySelector("#image1").innerHTML = "<img  src='images/season/" + hash[1] + "-1.jpeg' width='100%'>";
+			document.querySelector("#image1").innerHTML = "<img  src='images/season/" + number[1] + "-1.jpeg' width='100%'>";
 
-			document.querySelector("#image2").innerHTML = "<img  src='images/season/" + hash[1] + "-2.jpeg' width='100%'>";
+			document.querySelector("#image2").innerHTML = "<img  src='images/season/" + number[1] + "-2.jpeg' width='100%'>";
 
 			if(hash[1] == "8"){
-				document.querySelector("#image1").innerHTML += "<img  src='images/season/" + hash[1] + "-1-1.jpeg' width='100%'>";
+				document.querySelector("#image1").innerHTML += "<img  src='images/season/" + number[1] + "-1-1.jpeg' width='100%'>";
 			}
 
 
@@ -60,8 +60,8 @@
 <h2 class="text-2xl mt-6 mb-4 pb-2">二四節気</h2>
 
 <div id="image1"></div>
-<div id="image2"></div>
-<div id="image3"></div>
+<div id="image2" class="mt-3"></div>
+<div id="image3" class="mt-3"></div>
 
 <!--<div class="md:grid md:grid-cols-2 md:gap-2 mt-5 pl-2 pr-2">
 	<div class="text-center">
