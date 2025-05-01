@@ -1,0 +1,13 @@
+{
+  "name": "マインド365",
+  "icons": [{
+      "src": "./images/apple-touch-icon.jpg",
+      "sizes": "256x256",
+      "type": "image/jpg"
+    },{
+      "src": "./images/apple-touch-icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    }],
+  "display": "standalone"
+}
