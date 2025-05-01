@@ -178,32 +178,49 @@
 			z-index: 10;
 		}
 
-        .overview {
-            height: 85%;
-        }
-
-		#closed-btn{
-            position: absolute;
-            right: 4px;
-            color: #ffffff;
-            background: #eb6ea5;
-            cursor: pointer;
-            text-align: center;
-            font-weight: bolder;
-            border-radius: .3em;
-            z-index: 12;
-        }
-
-        #closed-btn:hover{
-            background: #ffffff;
-            color: #eb6ea5;
-            border: 1px solid #eb6ea5;
-        }
-
-		.grid img{
-			cursor: pointer;
+		.overview {
+			height: 85%;
 		}
 
+		#closed-btn {
+			position: absolute;
+			right: 4px;
+			color: #ffffff;
+			background: #eb6ea5;
+			cursor: pointer;
+			text-align: center;
+			font-weight: bolder;
+			border-radius: .3em;
+			z-index: 12;
+		}
+
+		#closed-btn:hover {
+			background: #ffffff;
+			color: #eb6ea5;
+			border: 1px solid #eb6ea5;
+		}
+
+		.grid img {
+			cursor: pointer;
+			border-radius: .5em;
+		}
+
+		.grid div {
+			position: relative;
+		}
+
+		.grid div p {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			color: #fff;
+			margin: 0 !important;
+			padding: 0 !important;
+		}
 	</style>
 
 </head>
@@ -228,18 +245,18 @@
 			<div id="calendar" class="text-xl ml-3">体質改善カレンダー</div>
 
 			<div class="grid grid-cols-3 gap-3 mt-5 pl-2 pr-2">
-				<div onclick="month(1)"><img src="images/month/pic01.jpg" width="100%"></div>
-				<div onclick="month(2)"><img src="images/month/pic02.jpg" width="100%"></div>
-				<div onclick="month(3)"><img src="images/month/pic03.jpg" width="100%"></div>
-				<div onclick="month(4)"><img src="images/month/pic04.jpg" width="100%"></div>
-				<div onclick="month(5)"><img src="images/month/pic05.jpg" width="100%"></div>
-				<div onclick="month(6)"><img src="images/month/pic06.jpg" width="100%"></div>
-				<div onclick="month(7)"><img src="images/month/pic07.jpg" width="100%"></div>
-				<div onclick="month(8)"><img src="images/month/pic08.jpg" width="100%"></div>
-				<div onclick="month(9)"><img src="images/month/pic09.jpg" width="100%"></div>
-				<div onclick="month(10)"><img src="images/month/pic10.jpg" width="100%"></div>
-				<div onclick="month(11)"><img src="images/month/pic11.jpg" width="100%"></div>
-				<div onclick="month(12)"><img src="images/month/pic12.jpg" width="100%"></div>
+				<div onclick="month(1)"><img src="images/month/pic01.jpg" width="100%"><p class="text-2xl">１月</p></div>
+				<div onclick="month(2)"><img src="images/month/pic02.jpg" width="100%"><p class="text-2xl">２月</p></div>
+				<div onclick="month(3)"><img src="images/month/pic03.jpg" width="100%"><p class="text-2xl">３月</p></div>
+				<div onclick="month(4)"><img src="images/month/pic04.jpg" width="100%"><p class="text-2xl">４月</p></div>
+				<div onclick="month(5)"><img src="images/month/pic05.jpg" width="100%"><p class="text-2xl">５月</p></div>
+				<div onclick="month(6)"><img src="images/month/pic06.jpg" width="100%"><p class="text-2xl">６月</p></div>
+				<div onclick="month(7)"><img src="images/month/pic07.jpg" width="100%"><p class="text-2xl">７月</p></div>
+				<div onclick="month(8)"><img src="images/month/pic08.jpg" width="100%"><p class="text-2xl">８月</p></div>
+				<div onclick="month(9)"><img src="images/month/pic09.jpg" width="100%"><p class="text-2xl">９月</p></div>
+				<div onclick="month(10)"><img src="images/month/pic10.jpg" width="100%"><p class="text-2xl">１０月</p></div>
+				<div onclick="month(11)"><img src="images/month/pic11.jpg" width="100%"><p class="text-2xl">１１月</p></div>
+				<div onclick="month(12)"><img src="images/month/pic12.jpg" width="100%"><p class="text-2xl">１２月</p></div>
 			</div>
 
 			<hr class="mt-5 mb-5">
@@ -274,7 +291,8 @@
 
 			<div id="bookmark" class="text-xl ml-3 mb-3">参考情報</div>
 
-			<p id="footer" class="pl-5 text-sm">Design and Code by <a href="https://hitoshi2s.netlify.app/" target="_blank">仁志.</a></p>
+			<p id="footer" class="pl-5 text-sm">Design and Code by <a href="https://hitoshi2s.netlify.app/"
+					target="_blank">仁志.</a></p>
 			<p class="pl-5 pb-5 text-sm">Build with Tailwind.</p>
 
 		</div>
@@ -307,22 +325,22 @@
 
 			document.querySelector("#month").innerHTML = x;
 
-			document.querySelector("#image1").innerHTML = "<img src='images/season/" + x + "-1.jpeg' width='100%'>";
+			document.querySelector("#image1").innerHTML = "<img src='images/season/" + x + "-1.jpg' width='100%'>";
 
-			document.querySelector("#image2").innerHTML = "<img src='images/season/" + x + "-2.jpeg' width='100%'>";
+			document.querySelector("#image2").innerHTML = "<img src='images/season/" + x + "-2.jpg' width='100%'>";
 
 			if (x == "8") {
-				document.querySelector("#image1").innerHTML += "<img src='images/season/" + x + "-1-1.jpeg' class = 'mt-3' width='100%'>";
+				document.querySelector("#image1").innerHTML += "<img src='images/season/" + x + "-1-1.jpg' class = 'mt-3' width='100%'>";
 			}
 
 		};
 
 		const closed_btn = document.querySelector("#closed-btn");
 
-            closed_btn.addEventListener('click', () => {
-                $('#overlay').fadeOut();
-                $('#month-frame').fadeOut();
-            });
+		closed_btn.addEventListener('click', () => {
+			$('#overlay').fadeOut();
+			$('#month-frame').fadeOut();
+		});
 
 
 	</script>
